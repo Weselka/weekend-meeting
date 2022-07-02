@@ -14,20 +14,33 @@
 }
 
 @mixin list($dsp, $fww, $m, $mr, $ml, $mt, $mb) {
-    display: $dsp;
-    flex-wrap: $fww;
-    margin: $m;
-    margin-right: $mr;
-    margin-left: $ml;
-    margin-top: $mt;
-    margin-bottom: $mb;
+  display: $dsp;
+  flex-wrap: $fww;
+  margin: $m;
+  margin-right: $mr;
+  margin-left: $ml;
+  margin-top: $mt;
+  margin-bottom: $mb;
 }
 
 @mixin item($m, $mr, $ml, $mt, $mb, $q, $gap) {
-    margin: $m;
-    margin-right: $mr;
-    margin-left: $ml;
-    margin-top: $mt;
-    margin-bottom: $mb;
-    flex-basis: calc(100% / #{$q} - #{$gap});
+  margin: $m;
+  margin-right: $mr;
+  margin-left: $ml;
+  margin-top: $mt;
+  margin-bottom: $mb;
+  flex-basis: calc(100% / #{$q} - #{$gap});
+}
+
+@mixin section($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin flex($ai, $jc, $fd, $fw) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  flex-direction: $fd;
+  flex-wrap: $fw;
 }
