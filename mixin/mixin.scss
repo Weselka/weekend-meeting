@@ -1,0 +1,5 @@
+@mixin transition($one, $two, $three, $td, $ttf) {
+  transition-property: $one, $two, $three;
+  transition-duration: $td;
+  transition-timing-function: $ttf;
+}
