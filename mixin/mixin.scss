@@ -3,3 +3,12 @@
   transition-duration: $td;
   transition-timing-function: $ttf;
 }
+
+@mixin font($ff, $fw, $fs, $lh, $ls, $c) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh / $fs;
+  letter-spacing: $ls;
+  color: $c;
+}
