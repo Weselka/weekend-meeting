@@ -12,3 +12,22 @@
   letter-spacing: $ls;
   color: $c;
 }
+
+@mixin list($dsp, $fww, $m, $mr, $ml, $mt, $mb) {
+    display: $dsp;
+    flex-wrap: $fww;
+    margin: $m;
+    margin-right: $mr;
+    margin-left: $ml;
+    margin-top: $mt;
+    margin-bottom: $mb;
+}
+
+@mixin item($m, $mr, $ml, $mt, $mb, $q, $gap) {
+    margin: $m;
+    margin-right: $mr;
+    margin-left: $ml;
+    margin-top: $mt;
+    margin-bottom: $mb;
+    flex-basis: calc(100% / #{$q} - #{$gap});
+}
